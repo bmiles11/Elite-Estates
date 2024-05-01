@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:wght@400;500;600;700&family=Unica+One&display=swap');
+
+body {
+    background-color: #ffffff;
+    transition: 0.8s;
+}
+
+
+.container {
+    margin: auto;
+    width: 1280px;
+}
+
+header {
+    padding-bottom: 90px;
+}
+
+.logo {
+    background-image: url("images/car_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 70px;
+    float: left;
+}
+
+nav {
+    margin-left: 100px;
+    float: left;
+}
+
+nav a {
+    padding: 33px 70px 0px 0px;
+    float: left;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #110d4d;
+    transition: 2s;
+}
+
+nav a:hover {
+    color: #4d33aa;
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+/* Dark Mode Styles Start */
+
+body.dark {
+    background-color: #292c35;
+    transition: 0.8s;
+}
+
+
+body.dark nav a {
+    color: #ffffff;
+}
+
+body.dark nav a:hover {
+    color: #b8addd;
+}
+
+body.dark .logo {
+    background-image: url("images/elite_estates_logo_white.png");
+}
+
+body.dark .contact-us h2 {
+    color: #ffffff;
+}
+
+body.dark .contact-us p  {
+    color: #ffffff;
+}
+
+body.dark .guess h2, .guess p {
+    color: #ffffff;
+}
+
+
+
+/* Dark Mode Styles End */
+
+.darkmode {
+    opacity: 0;
+    position: absolute;
+}
+
+.darkmode-label {
+    margin-top: 23px;
+    width: 150px;
+    background-color: #4d33aa;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 10px 0 10px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+}
+
+.darkmode-label p {
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.darkmode-label .toggle {
+    background-color: #ffffff;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    border-radius: 15px;
+    transition: transform 0.2s linear;
+}
+
+.darkmode:checked + .darkmode-label .toggle {
+    transform: translateX(75px);
+}
+
+/* Hero Section Start */
+
+h1 {
+    margin-top: 90px;
+    color: #ffffff;
+    font-size: 45pt;
+    font-family: 'Rubik', sans-serif;
+}
+
+.hero {
+    height: 700px;
+    background-image: url("images/luxury-pool-villa-hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    clear: left;
+}
+
+.hero-left {
+    width: 600px;
+    height: 600px;
+    padding: 50px;
+    background-color: rgba(17, 13, 77, 0.85);
+    border-radius: 15px 0 0 15px;
+}
+
+.hero-left p {
+    margin-top: -40px;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    line-height: 17pt;
+}
+
+.hero-button {
+    margin-top: 7px;
+    width: 165px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    color: #110d4d;
+    font-size: 11pt;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #cccccc;
+    transition: 0.8s;
+}
+
+.hero-left a {
+    text-decoration: none;
+}
+
+/* Hero Section End */
+
+
+/* Product Section Start */
+
+.product-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.product-section img {
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+.product-section ul {
+    margin-top: 30px;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    list-style-type: none;
+    text-align: center;
+}
+
+.product-section ul li {
+    padding-bottom: 8px;
+}
+
+.product {
+    margin-top: 30px;
+    width: 300px;
+    padding-bottom: 30px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+
+.product h3 {
+    margin: auto;
+    width: 180px;
+    padding: 10px 0 10px 0;
+    background-color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+    color: #4d33aa;
+    border: 2px solid #4d33aa;
+    border-radius: 20px;
+}
+
+.product p {
+    font-size: 15pt;
+    font-weight: bold;
+    color: #4d33aa;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.product a {
+    text-decoration: none;
+}
+
+.product-button {
+    margin: auto;
+    width: 145px;
+    padding: 10px;
+    background-color: #4d33aa;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 11pt;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.8s;
+}
+
+.product-button:hover {
+    background-color: #110d4d;
+}
+
+/* Product Section End */
+
+
+/* Contact Section Start */
+
+.contact-us {
+    margin-top: 80px;
+}
+
+.contact-us h2 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    color: #4d33aa;
+}
+
+.contact-us p {
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    width: 700px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+/* Contact Section End */
+
+
+/* Guessing Game */
+.guess {
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    font-family: "Rubik";
+
+}
+
+.guess h2 {
+    color: #000;
+  }
+
+  p {
+    color: #555;
+  }
+
+.guess input[type="number"] {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+.guess button {
+    background-color: #4d33aa;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+.guess button:hover {
+    background-color: #110d4d;
+  }
+
+.guess #result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+/* Guessing Game End */
+
+#contest-Container {
+    margin: auto;
+    width: 550px;
+    height: 350px;
+    border: 3px #f0f0f0 solid;
+    overflow: hidden;
+}
+
+#wrapper {
+    width: 2200px;
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out;
+}
+
+.content {
+    float: left;
+    width: 550px;
+    height: 350px;
+    white-space: normal;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contest h2 {
+    margin-top: 70px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.content img {
+    width: 100px;
+}
+
+.content span {
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+#navLinks {
+    margin: auto;
+    text-align: center;
+    width: 550px;
+    font-family: 'Rubik', sans-serif;
+}
+#navLinks ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-top: 6px;
+}
+#navLinks ul li {
+    float: left;
+    text-align: center;
+    margin: 10px;
+    list-style: none;
+    cursor: pointer;
+    background-color: #4d33aa;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.8s;
+}
+
+#navLinks ul li:hover {
+    background-color: #110d4d;
+    transition: 0.8s;
+}
+
+#navLinks ul li.active {
+    background-color: #333333;
+    color: #FFFFFF;
+    outline-width: 7px;
+}
+
+#navLinks ul li.active:hover {
+    background-color: #484848;
+    color: #FFFFFF;
+}
+
+
+.form-container {
+    margin: auto;
+    width: 700px;
+    padding: 50px 75px 50px 50px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+}
+
+label {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.form-container p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 500;
+}
+
+input[type=radio] {
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    background-color: #4d33aa;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 11pt;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+input[type=submit]:hover {
+    background-color: #110d4d;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    background-color: #110d4d;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 10pt;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+footer h5 {
+    font-size: 11pt;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer p {
+    width: 300px;
+}
+
+footer .quick {
+    width: 85px;
+}
+
+footer .offices {
+    width: 150px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
