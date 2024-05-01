@@ -1,6 +1,6 @@
 'use strict'
 
-let checkbox = document.getElementById("dark")
+let checkbox = document.getElementById("darkmode")
     checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark")
 });
